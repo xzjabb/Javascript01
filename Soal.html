@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tugas JavaScript</h1>
+
+    <h4>&copy;Rajab Supriyadin || XII-PPLG</h4>
+    <ul>
+        <li>1. Apa perbedaan utama antara var, let, dan const dalam JavaScript?</li>
+        <li>Jawaban: var adalah function-scoped, let adalah block-scoped dan dapat di-update, const adalah block-scoped dan tidak dapat di-update.</li>
+        <li>2. Apa output dari kode berikut?</li>
+        <li>
+            <pre>
+            var x = 10; 
+            let y = 5; 
+            const z = 20; 
+            x = 15; 
+            y = 10; 
+            z = 25; 
+            console.log(x, y, z); // Output: 15, 10, Error
+            </pre>
+        </li>
+        <li>3. Perbaiki kode di atas agar tidak terjadi error!</li>
+        <li>
+            <pre>
+            var x = 10; 
+            let y = 5; 
+            const z = 20; 
+            x = 15; 
+            y = 10; 
+            console.log(x, y, z); // Output: 15, 10, 20
+            </pre>
+        </li>
+        <li>4. Tentukan tipe data dari masing-masing variabel berikut:</li>
+        <li>
+            <pre>
+            let a = 'Hallo'; // String
+            let b = 42; // Number
+            let c = true; // Boolean
+            let d = [1, 2, 3]; // Array
+            let e = { name: 'ahmad', age: 25 }; // Object
+            </pre>
+        </li>
+        <li>5. Buatlah sebuah array yang berisi 5 nama buah dan tampilkan elemen ketiga!</li>
+        <li>
+            <pre>
+            let buah = ['pisang', 'alpukat', 'ceri', 'apel', 'melon'];
+            console.log(buah[2]); // Output: ceri
+            </pre>
+        </li>
+        <li>6. Buatlah sebuah object yang berisi informasi nama, umur, dan pekerjaan seseorang, lalu tampilkan nilai dari properti nama.</li>
+        <li>
+            <pre>
+            let orangan = { name: 'Ahmad', age: 30, job: 'Engineer' };
+            console.log(orangan.name); // Output: Alice
+            </pre>
+        </li>
+        <li>7. Apa hasil dari operasi berikut?</li>
+        <li>
+            <pre>
+            console.log(10 + '5'); // Output: '105'
+            console.log(10 - '5'); // Output: 5
+            console.log(10 === '10'); // Output: false
+            console.log(10 == '10'); // Output: true
+            console.log(true && false); // Output: false
+            console.log(true || false); // Output: true
+            console.log(!true); // Output: false
+            </pre>
+        </li>
+        <li>8. Buat kode yang menggunakan operator perbandingan untuk mengecek apakah sebuah angka lebih besar dari 100 dan lebih kecil dari 500!</li>
+        <li>
+            <pre>
+            let number = 250;
+            if (number > 100 && number < 500) {
+                console.log('Memenuhi Syarat');
+            }
+            </pre>
+        </li>
+        <li>9. Buat program if-else untuk menentukan apakah sebuah angka ganjil atau genap.</li>
+        <li>
+            <pre>
+            let num = 4;
+            if (num % 2 === 0) {
+                console.log('ganjil');
+            } else {
+                console.log('genap');
+            }
+            </pre>
+        </li>
+        <li>10. Gunakan switch-case untuk mencetak nama hari berdasarkan nomor (1 = Senin, 2 = Selasa, ... 7 = Minggu).</li>
+        <li>
+            <pre>
+            let hari = 3;
+            switch (hari) {
+                case 1: console.log('senin'); break;
+                case 2: console.log('selasa'); break;
+                case 3: console.log('rabu'); break;
+                case 4: console.log('kamis'); break;
+                case 5: console.log('jumat'); break;
+                case 6: console.log('sabtu'); break;
+                case 7: console.log('minggu'); break;
+                default: console.log('Invalid hari');
+            }
+            </pre>
+        </li>
+        <li>11. Gunakan for loop untuk mencetak angka dari 1 hingga 10.</li>
+        <li>
+            <pre>
+            for (let i = 1; i <= 10; i++) {
+                console.log(i);
+            }
+            </pre>
+        </li>
+        <li>12. Gunakan while loop untuk mencetak angka dari 10 hingga 1.</li>
+        <li>
+            <pre>
+            let i = 10;
+            while (i >= 1) {
+                console.log(i);
+                i--;
+            }
+            </pre>
+        </li>
+        <li>13. Gunakan do-while loop untuk mencetak angka dari 1 hingga 5.</li>
+        <li>
+            <pre>
+            let j = 1;
+            do {
+                console.log(j);
+                j++;
+            } while (j <= 5);
+            </pre>
+        </li>
+    </ul>
+</body>
+</html>
